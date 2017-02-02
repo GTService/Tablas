@@ -11,18 +11,18 @@ if(isset($_SESSION['usuario']))
 <html lang="en">
     <head>
         
-        <?php    require_once("includes/plugins.php");?>
+        <?php    require_once("includes/plugins.php");?> 
         <script type="text/javascript" src="js/uploadify/swfobject.js"></script>
         <script type="text/javascript" src="js/uploadify/jquery.uploadify.js"></script>
         <script type="text/javascript" src="js/archivos/archivos.js"></script>
         <title>Archivos</title>
     </head>
-    <header>
+    <header >
     <?php
         require("menu_admin.php");
     ?>
     </header>
-    <body class="nav-md">
+    <body class="nav-md" onload="activeTabChoose(1)">
            <div class="col-md-4">
             <button type="button" class="col-md-4 btn btn-info btnPanel" onclick="abrir_modal('modal_nuevo_archivo')" >
                 <i class="fa fa-plus" aria-hidden="true"></i>Agregar archivo

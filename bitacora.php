@@ -20,7 +20,7 @@ if(isset($_SESSION['usuario']))
         require("menu_admin.php");
     ?>
     </header>
-    <body>
+    <body onload="activeTabChoose(2)">
         <div class="container"> 
             <table class="table table-bordered table-hover">
                 <thead>

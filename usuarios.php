@@ -20,7 +20,7 @@ if(isset($_SESSION['usuario']))
         require("menu_admin.php");
     ?>
     </header>
-    <body class="nav-md">
+    <body class="nav-md" onload="activeTabChoose(0)">
         <div class="row-fluid">
             <button type="button" class="col-md-2 pull-left btn btn-info btnPanel" onclick="abrir_modal('modal_nuevo_usuario')" >
                 <i class="fa fa-plus" aria-hidden="true"></i>Agregar Usuario

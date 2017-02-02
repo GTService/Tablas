@@ -1,17 +1,6 @@
 //////////////generales//////////////////
 $( document ).ready(function() 
 {
-    switch(sessionStorage.ActiveTab){
-        case "0": $('#navUsuarios').addClass('active')
-        break;
-        case "1": $('#navArchivos').addClass('active')
-        break;
-        case "2": $('#navConf').addClass('active')
-        break;
-    }
-   $('#navUsuarios').attr('onClick','sessionStorage.ActiveTab = 0');
-   $('#navArchivos').attr('onClick','sessionStorage.ActiveTab = 1');
-   $('#navConf').attr('onClick','sessionStorage.ActiveTab = 2');
     $('.table').dataTable();
 });  
 function cerrar_sesion()
@@ -50,4 +39,15 @@ function pnotify_creador( title, text, type )
         text: text,
         type: type
     });
+}
+function activeTabChoose(id){
+    
+    switch(id){
+        case 0: $('#navUsuarios').addClass('active')
+        break;
+        case 1: $('#navArchivos').addClass('active')
+        break;
+        case 2: $('#navConf').addClass('active')
+        break;
+    }
 }
