@@ -107,7 +107,7 @@ else
                             </div>
                         </div>
                 </div>
-                <button type="submit" class="btn btn-default">Agregar</button>
+                <button type="submit" class="btn btn-primary">Agregar</button>
             </form>
         </div>
         <div class="modal-footer">
