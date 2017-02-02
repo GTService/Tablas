@@ -10,7 +10,7 @@
     <tbody>
 <?php
 require_once($_SERVER['DOCUMENT_ROOT']."/tablas/includes/database.php");
-$consulta=$db->query("select * from usuarios");
+$consulta=$db->query("select * from usuarios where usuario!='$usuario'");
 if($db->num_rows($consulta)>0)
 {
     while($fila_usuario=$db->fetch_array($consulta))
