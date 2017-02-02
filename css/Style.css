@@ -1,0 +1,26 @@
+body {
+    background: #fff;
+    font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.471;
+}
+table{
+    background: #fff;
+}
+.icoButton{
+    transition: 200ms all ease-in-out;
+    font-size: 18pt;
+}
+.icoButton:hover{
+    color: #1ABB9C
+}
+#buttonsPannel{
+    background: #fff;
+}
+.btnPanel{
+    margin: 5px 25px;
+}
+#uploadify object { 
+  background: #fff;
+}

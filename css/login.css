@@ -1,0 +1,86 @@
+body {
+    color: #73879C;
+    background: #2A3F54;
+    font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.471;    
+    background-image: url(../images/bc.png) !important;
+}
+#page_body #login_form {
+	height: 402px;
+	width: 602px;
+	background-image: url(../images/login_bg.jpg);
+	background-repeat: no-repeat;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 70px;
+	position: relative;
+}
+#page_body #login_form form #user {
+	position: absolute;
+	left: 210px;
+	top: 160px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	height: 25px;
+	width: 190px;
+	font-size: 16px;
+}
+
+#page_body #login_form form #pass {
+	position: absolute;
+	left: 210px;
+	top: 230px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	height: 25px;
+	width: 190px;
+}
+#page_body #login_form form #login_button {
+	height: 31px;
+	width: 157px;
+	position: absolute;
+	background-image: url(../images/login_button.png);
+	left: 245px;
+	top: 300px;
+	cursor:pointer;
+}
+#page_body #page_content #login_form #my_login #new_pass {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	font-style: italic;
+	color: #FFF;
+	position: relative;
+	left: 65px;
+	top: 285px;
+}
+
+#page_body #login_form #loading {
+	position: absolute;
+	left: 125px;
+	top: 305px;
+	font-size: 16px;
+	color: #FFF;
+}
+a {
+	color: #FFF;
+}
+a:hover {
+	color: #000;
+}
+#login_form #my_login #new_pass {
+	font-style: italic;
+	font-weight: bold;
+	color: #FFF;
+	position: absolute;
+	left: 75px;
+	top: 300px;
+}
+#spacing{
+    height: 150px;
+}
