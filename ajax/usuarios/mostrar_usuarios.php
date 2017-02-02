@@ -10,7 +10,7 @@
     <tbody>
 <?php
 require_once($_SERVER['DOCUMENT_ROOT']."/tablas/includes/database.php");
-$consulta=$db->query("select * from usuarios where usuario!='$usuario'");
+$consulta=$db->query("select * from usuarios");
 if($db->num_rows($consulta)>0)
 {
     while($fila_usuario=$db->fetch_array($consulta))
@@ -29,14 +29,7 @@ if($db->num_rows($consulta)>0)
             $tipo="Cliente";
         }
         echo "<td>".$tipo."</td>";
-        if($fila_usuario['tipo']=="0")
-        {
-            echo "<td><i class='fa fa-trash fa-2x icoButton' onclick=\"eliminar_usuario('".$fila_usuario['id']."')\" aria-hidden='true'></i></td>";
-        }
-        else
-        {
-            echo "<td></td>";
-        }
+        echo "<td><i class='fa fa-trash fa-2x icoButton' onclick=\"eliminar_usuario('".$fila_usuario['id']."')\" aria-hidden='true'></i></td>";
         echo "</tr>";
     }
 }

@@ -6,7 +6,6 @@ if(isset($_SESSION['usuario']))
 {
     if($_SESSION['permiso']==1)
     {
-        $usuario=$_SESSION['usuario'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -77,7 +76,8 @@ else
                       <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
                       <input type="text" name="usuario" class="form-control has-feedback-left validar" required placeholder="Usuario" title="Usuario">
                     </div>
-                </div>
+                </div><input style="display:none" type="text" name="fakeusernameremembered"/>
+<input style="display:none" type="password" name="fakepasswordremembered"/>
               <div class="form-group">
                    
                     <!--Ciudad-->
