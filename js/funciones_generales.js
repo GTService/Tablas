@@ -2,6 +2,8 @@
 $( document ).ready(function() 
 {
     $('.table').dataTable();
+    $('#DataTables_Table_0_filter:first-child').addClass( "pull-right" );
+
 });  
 function cerrar_sesion()
 {

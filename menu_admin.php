@@ -11,7 +11,7 @@
                 <a class="nav-link" href="bitacora.php">Historial de descarga</a>
             </li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav pull-right">
             <li class="nav-item">
                 <a class="nav-link" href="javascript://" onclick="cerrar_sesion()">Cerrar sesion <i class="fa fa-sign-out" aria-hidden="true"></i></a>
             </li>
