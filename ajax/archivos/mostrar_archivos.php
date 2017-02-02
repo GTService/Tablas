@@ -27,7 +27,7 @@ if($db->num_rows($consulta)>0)
         echo "<td>".$fila_archivo['creacion']."</td>";
         echo "<td>".$fila_archivo['anio']."</td>";
         echo "<td>".$fila_archivo['periodo']."</td>";
-        echo "<td><button onclick=\"eliminar_archivo('archivos_usuarios','".$fila_archivo['nombre']."')\"><i class='fa fa-eraser' aria-hidden='true'></button></i></td>";
+        echo "<td><i class='fa fa-trash fa-2x icoButton' onclick=\"eliminar_archivo('archivos_usuarios','".$fila_archivo['nombre']."')\" aria-hidden='true'></i></td>";
         echo "</tr>";
     }
 }
@@ -45,7 +45,7 @@ if($db->num_rows($consulta2)>0)
         echo "<td>".$fila_archivo2['creacion']."</td>";
         echo "<td>".$fila_archivo2['anio']."</td>";
         echo "<td>".$fila_archivo2['periodo']."</td>";
-        echo "<td><button onclick=\"eliminar_archivo('archivos_globales','".$fila_archivo2['nombre']."')\"><i class='fa fa-eraser' aria-hidden='true'></button></i></td>";
+        echo "<td><i class='fa fa-trash icoButton fa-2x' aria-hidden='true' onclick=\"eliminar_archivo('archivos_globales','".$fila_archivo2['nombre']."')\"></i></td>";
         echo "</tr>";
     }
 }

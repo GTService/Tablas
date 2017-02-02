@@ -31,7 +31,7 @@ if($db->num_rows($consulta)>0)
         echo "<td>".$tipo."</td>";
         if($fila_usuario['tipo']=="0")
         {
-            echo "<td><button onclick=\"eliminar_usuario('".$fila_usuario['id']."')\"><i class='fa fa-eraser' aria-hidden='true'></button></i></td>";
+            echo "<td><i class='fa fa-trash fa-2x icoButton' onclick=\"eliminar_usuario('".$fila_usuario['id']."')\" aria-hidden='true'></i></td>";
         }
         else
         {
