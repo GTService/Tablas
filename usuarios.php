@@ -21,15 +21,18 @@ if(isset($_SESSION['usuario']))
     ?>
     </header>
     <body class="nav-md">
-        
-            <button type="button" class="col-md-2 btn btn-info btnPanel" onclick="abrir_modal('modal_nuevo_usuario')" >
+        <div class="row-fluid">
+            <button type="button" class="col-md-2 pull-left btn btn-info btnPanel" onclick="abrir_modal('modal_nuevo_usuario')" >
                 <i class="fa fa-plus" aria-hidden="true"></i>Agregar Usuario
             </button>
-            <div class="col-xs-2 col-md-12" id="tabla"> 
+        </div>
+        <div class="row-fluid">
+            <div class="col-md-12" id="tabla"> 
                 <?php
                 include("ajax/usuarios/mostrar_usuarios.php");
                 ?>
             </div>
+        </div>
     </body>
 </html>
 <?php
@@ -95,10 +98,10 @@ else
                     <label>Tipo</label>
                         <div>
                             <div class="btn-group" data-toggle="buttons">
-                                <label class="btn btn-primary">
+                                <label class="btn btn-default">
                                     <input type="radio" id="radioadmin" name="tipo" value="1">Administrador
                                 </label>
-                                <label class="btn btn-primary active">
+                                <label class="btn btn-default active">
                                     <input type="radio" id="radiocliente" name="tipo" checked="true" value="0">Cliente
                                 </label>
                             </div>

@@ -1,4 +1,4 @@
-<table class="table table-bordered table-hover">
+<table class="table table-bordered table-hover table-condensed table-striped">
     <thead>
         <th>id usuario</th>
         <th>nombre</th>

@@ -12,8 +12,6 @@ if(isset($_SESSION['usuario']))
     <head>
         
         <?php    require_once("includes/plugins.php");?>
-         <link rel="stylesheet" href="js/datatables/jquery.dataTables.min.css">
-        <script type="text/javascript" src="js/datatables/jquery.dataTables.min.js"></script>
         <script type="text/javascript" src="js/uploadify/swfobject.js"></script>
         <script type="text/javascript" src="js/uploadify/jquery.uploadify.js"></script>
         <script type="text/javascript" src="js/archivos/archivos.js"></script>
