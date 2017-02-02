@@ -1,5 +1,5 @@
 <nav class="navbar navbar-inverse">
-    <a class="navbar-brand">Admin</a>
+    <a class="navbar-brand"><?php echo $_SESSION['usuario'] ?></a>
         <ul class="nav navbar-nav">
             <li class="nav-item" id="navUsuarios">
                 <a class="nav-link" href="usuarios.php">Usuarios</a>

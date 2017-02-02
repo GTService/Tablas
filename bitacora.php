@@ -10,9 +10,6 @@ if(isset($_SESSION['usuario']))
 <html lang="en">
     <head>        
          <?php    require_once("includes/plugins.php");?>
-          <!--<script type="text/javascript" src="js/notify.js"></script>-->
-         <link rel="stylesheet" href="js/datatables/jquery.dataTables.min.css">
-        <script type="text/javascript" src="js/datatables/jquery.dataTables.min.js"></script>
         <script type="text/javascript" src="js/funciones_generales.js"></script>
     </head>
     <header>
