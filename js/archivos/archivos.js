@@ -7,16 +7,10 @@ $( document ).ready(function()
         'cancelImg'      : 'js/uploadify/cancel.png',
         'folder'         : 'archivos',
         'auto'           : false,
-        'method'         : 'POST',
-            'btnClass':'col-md-4',
         'onSelect'       : function(event, ID, fileObj, data, remove, clearFast)
         {
             archivo=fileObj;
         },
-        'onCancel' : function(event, ID, fileObj, data, remove, clearFast)
-         {
-            archivo="";
-         },
         'onComplete' : function(event, queueID, fileObj, response, data) 
         {
             archivo="";
@@ -55,12 +49,13 @@ function subir_archivo()
     }
     else
     {
-        $.notify("debe elegir un archivo a subir","error");
+        pnotify_creador("No hay archivos", "seleccione un archivo", "warn");
     }
     
 }
 function cancelar_archivo()
 {
+    $('#file_upload').uploadifyClearQueue();
     $("#modal_nuevo_archivo").modal('toggle');
 }
 function eliminar_archivo(tabla,id)

@@ -70,7 +70,7 @@ else
                 <label>Que usuario podrá ver este archivo?</label>
                 <div class="input-group margin-bottom-sm">
                   <span class="input-group-addon"><i class="fa fa-eye fa-fw" aria-hidden="true"></i></span>
-                        <select name="usuario" class="form-control has-feedback-left validar" id="usuario_archivo">
+                        <select name="usuario" class="form-control has-feedback-left validar" id="usuario_archivo" required>
                             <option value=''>selecciona una opcion</option>
                             <option value='todos'>Todos</option>
                             <?php

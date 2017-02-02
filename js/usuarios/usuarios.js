@@ -30,7 +30,7 @@ function eliminar_usuario(id)
         success:function(respuesta)
         {
             var mensaje=JSON.parse(respuesta);
-            pnotify_creador("usuario eliminado",mensaje.body, mensaje.header);
+            pnotify_creador("Alerta",mensaje.body, mensaje.header);
             $("#tabla").html(mensaje.content);
             $('.table').DataTable();
         }

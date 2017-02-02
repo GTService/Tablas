@@ -27,11 +27,11 @@ if($db->num_rows($consulta_archivos)==0)
     $pagina = ob_get_clean();
     if($insertar_archivo)
     {
-        $mensaje = array("header" => "success","body" => "el archivo $nombre se ha guardado", "content" => $pagina);
+        $mensaje = array("header" => "success","body" => "el archivo guardado", "content" => $pagina);
     }
     else
     {
-        $mensaje = array("header" => "error","body" => "el archivo $nombre ya existe, seleccione otro o elimine el existente", "content" => $pagina);
+        $mensaje = array("header" => "error","body" => "el archivo ya existe, seleccione otro o elimine el existente", "content" => $pagina);
     }
 }
 else
@@ -39,7 +39,7 @@ else
     ob_start();
     include 'mostrar_archivos.php';
     $pagina = ob_get_clean();
-    $mensaje = array("header" => "error","body" => "el archivo $nombre ya existe, seleccione otro o elimine el existente", "content" => $pagina);
+    $mensaje = array("header" => "error","body" => "el archivo ya existe, seleccione otro o elimine el existente", "content" => $pagina);
 }
 echo json_encode($mensaje);
 ?>
