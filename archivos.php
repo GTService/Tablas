@@ -158,7 +158,7 @@ else
                 <label>Selecciona el archivo</label>
                     <div><input type="file" name="nombre" id="file_upload"></div>
               </div>
-              <div id="boton_subir"><button type="submit" class="btn btn-primary col-md-12"> <i class="fa fa-upload" aria-hidden="true"></i> Subir</button></div>
+              <div id="boton_subir"><button type="submit" class="btn btn-primary col-md-4"> <i class="fa fa-upload" aria-hidden="true"></i> Subir</button></div>
             </form>
         </div>
         <div class="modal-footer">
