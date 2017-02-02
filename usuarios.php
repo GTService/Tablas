@@ -6,13 +6,12 @@ if(isset($_SESSION['usuario']))
 {
     if($_SESSION['permiso']==1)
     {
+        $usuario=$_SESSION['usuario'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>        
          <?php    require_once("includes/plugins.php");?>
-           <link rel="stylesheet" href="js/datatables/jquery.dataTables.min.css">
-        <script type="text/javascript" src="js/datatables/jquery.dataTables.min.js"></script>
         <script type="text/javascript" src="js/funciones_generales.js"></script>
         <script type="text/javascript" src="js/usuarios/usuarios.js"></script>
     </head>
