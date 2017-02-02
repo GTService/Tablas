@@ -33,7 +33,7 @@ if($db->num_rows($consulta)>0)
         echo "<td>".$fila_archivo['anio']."</td>";
         echo "<td>".$fila_archivo['periodo']."</td>";
         $nombre_aux2=explode("(global)",$nombre_aux[1]);
-        echo "<td><button onclick=\"descargar('".$nombre_aux2[0]."','".$_SESSION['usuario']."')\"><i class='fa fa-download' aria-hidden='true'></button></i></td>";
+        echo "<td><i class='fa fa-download icoButton' onclick=\"descargar('".$nombre_aux2[0]."','".$_SESSION['usuario']."')\" aria-hidden='true'></i></td>";
         echo "</tr>";
     }
 }

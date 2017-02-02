@@ -19,7 +19,7 @@ if(isset($_SESSION['usuario']))
         require("menu_usuario_comun.php");
     ?>
     </header>
-    <body class="nav-md">
+    <body class="nav-md"  class="nav-md" onload="activeTabChoose(0)">
         <div class="col-xs-2 col-md-12" id="tabla"> 
             <?php
             include("ajax/archivos/mostrar_archivos_usuario_comun.php");
