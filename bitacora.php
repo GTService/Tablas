@@ -18,33 +18,35 @@ if(isset($_SESSION['usuario']))
     ?>
     </header>
     <body onload="activeTabChoose(2)">
-        <div class="container"> 
-            <table class="table table-bordered table-hover">
-                <thead>
-                        <th>#</th>
-                        <th>usuario</th>
-                        <th>archivo</th>
-                        <th>fecha de  descarga</th>
-                </thead>
-                <tbody>
-                    <?php
-                    require_once($_SERVER['DOCUMENT_ROOT']."/tablas/includes/database.php");
-                    $bitacora=$db->query("select * from bitacora order by fecha_descarga desc");
-                    if($db->num_rows($bitacora)>0)
-                    {
-                        while($fila_bitacora=$db->fetch_array($bitacora))
+        <div class="row-fluid"> 
+               <div class="col-md-12">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                            <th>#</th>
+                            <th>usuario</th>
+                            <th>archivo</th>
+                            <th>fecha de  descarga</th>
+                    </thead>
+                    <tbody>
+                        <?php
+                        require_once($_SERVER['DOCUMENT_ROOT']."/tablas/includes/database.php");
+                        $bitacora=$db->query("select * from bitacora order by fecha_descarga desc");
+                        if($db->num_rows($bitacora)>0)
                         {
-                            echo "<tr>";
-                            echo "<td>".$fila_bitacora['id']."</td>";
-                            echo "<td>".$fila_bitacora['usuario']."</td>";
-                            echo "<td>".$fila_bitacora['archivo']."</td>";
-                            echo "<td>".$fila_bitacora['fecha_descarga']."</td>";
-                            echo "</tr>";
+                            while($fila_bitacora=$db->fetch_array($bitacora))
+                            {
+                                echo "<tr>";
+                                echo "<td>".$fila_bitacora['id']."</td>";
+                                echo "<td>".$fila_bitacora['usuario']."</td>";
+                                echo "<td>".$fila_bitacora['archivo']."</td>";
+                                echo "<td>".$fila_bitacora['fecha_descarga']."</td>";
+                                echo "</tr>";
+                            }
                         }
-                    }
-                    ?>
-                </tbody>
-            </table>
+                        ?>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </body>
 </html>
