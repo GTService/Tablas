@@ -15,6 +15,10 @@ if(isset($_SESSION['usuario']))
         <script type="text/javascript" src="js/icheck.js"></script>
         <script type="text/javascript" src="js/funciones_generales.js"></script>
         <script type="text/javascript" src="js/usuarios/usuarios.js"></script>
+        <style>
+label.icheckLabel.hover{
+    cursor: pointer;
+}</style>
     </head>
     <header>
     <?php
@@ -102,14 +106,14 @@ else
                             <div class="btn-group" data-toggle="buttons">
                                 <label >
                                     <input type="radio" class="icheckRadio" id="radioadmin" name="tipo" value="1">
-                                &nbsp;Administrador
+                                &nbsp;<label for="radioadmin" class="icheckLabel">Administrador</label>
                                 </label>
                                 &nbsp;
                                 &nbsp;
                                 &nbsp;
                                 <label>
                                     <input type="radio" class="icheckRadio"  id="radiocliente" name="tipo" checked="true" value="0">
-                                &nbsp;Cliente
+                                &nbsp;<label for="radiocliente" class="icheckLabel">Cliente</label>
                                 </label>
                             </div>
                         </div>
