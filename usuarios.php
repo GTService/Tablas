@@ -101,13 +101,15 @@ else
                         <div>
                             <div class="btn-group" data-toggle="buttons">
                                 <label >
-                                    <input type="radio" class="icheckRadio" id="radioadmin" name="tipo" value="1">Administrador
+                                    <input type="radio" class="icheckRadio" id="radioadmin" name="tipo" value="1">
+                                &nbsp;Administrador
                                 </label>
                                 &nbsp;
                                 &nbsp;
                                 &nbsp;
                                 <label>
-                                    <input type="radio" class="icheckRadio"  id="radiocliente" name="tipo" checked="true" value="0">Cliente
+                                    <input type="radio" class="icheckRadio"  id="radiocliente" name="tipo" checked="true" value="0">
+                                &nbsp;Cliente
                                 </label>
                             </div>
                         </div>
