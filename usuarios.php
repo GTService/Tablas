@@ -11,6 +11,8 @@ if(isset($_SESSION['usuario']))
 <html lang="en">
     <head>        
          <?php    require_once("includes/plugins.php");?>
+         <link rel="stylesheet" href="css/blue.css">
+        <script type="text/javascript" src="js/icheck.js"></script>
         <script type="text/javascript" src="js/funciones_generales.js"></script>
         <script type="text/javascript" src="js/usuarios/usuarios.js"></script>
     </head>
@@ -98,11 +100,14 @@ else
                     <label>Tipo</label>
                         <div>
                             <div class="btn-group" data-toggle="buttons">
-                                <label class="btn btn-default">
-                                    <input type="radio" id="radioadmin" name="tipo" value="1">Administrador
+                                <label >
+                                    <input type="radio" class="icheckRadio" id="radioadmin" name="tipo" value="1">Administrador
                                 </label>
-                                <label class="btn btn-default active">
-                                    <input type="radio" id="radiocliente" name="tipo" checked="true" value="0">Cliente
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                <label>
+                                    <input type="radio" class="icheckRadio"  id="radiocliente" name="tipo" checked="true" value="0">Cliente
                                 </label>
                             </div>
                         </div>
