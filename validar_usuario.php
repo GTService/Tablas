@@ -1,5 +1,5 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT']."/tablas/includes/database.php");
+require_once($_SERVER['DOCUMENT_ROOT']."/archivos_timbrado/includes/database.php");
 $usuario=$_POST['usuario'];
 $password=md5($_POST['password']);
 $consulta=$db->query("select * from usuarios where usuario='$usuario' and password='$password'");

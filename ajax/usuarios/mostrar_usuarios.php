@@ -9,7 +9,7 @@
     </thead>
     <tbody>
 <?php
-require_once($_SERVER['DOCUMENT_ROOT']."/tablas/includes/database.php");
+require_once($_SERVER['DOCUMENT_ROOT']."/archivos_timbrado/includes/database.php");
 $consulta=$db->query("select * from usuarios");
 if($db->num_rows($consulta)>0)
 {

@@ -28,7 +28,7 @@ $usuario=$_SESSION['id_aux'];
 if (!empty($_FILES)) {
 	$tempFile = $_FILES['Filedata']['tmp_name'];
 	$targetPath = $_SERVER['DOCUMENT_ROOT'] . $_REQUEST['folder'] . '/';
-	$targetFile =  str_replace('//','/',$targetPath) .$usuario."-". $_FILES['Filedata']['name'];
+	$targetFile =  str_replace('//','/',$targetPath) .$usuario."---". $_FILES['Filedata']['name'];
 	
 	// $fileTypes  = str_replace('*.','',$_REQUEST['fileext']);
 	// $fileTypes  = str_replace(';','|',$fileTypes);

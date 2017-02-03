@@ -1,12 +1,12 @@
 <?php
 date_default_timezone_set('America/Tijuana');
-require_once($_SERVER['DOCUMENT_ROOT']."/tablas/includes/database.php");
+require_once($_SERVER['DOCUMENT_ROOT']."/archivos_timbrado/includes/database.php");
 $tipo=$_POST['tipo'];
 $anio=$_POST['anio'];
 $periodo=$_POST['periodo'];
 $nombre=$_POST['nombre'];
 $cliente=$_POST['usuario'];
-$nombre=$cliente."-".$nombre;
+$nombre=$cliente."---".$nombre;
 session_start();
 $_SESSION['id_aux']=$cliente;
 

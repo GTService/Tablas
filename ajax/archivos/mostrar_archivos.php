@@ -11,14 +11,14 @@
     </thead>
     <tbody>
 <?php
-require_once($_SERVER['DOCUMENT_ROOT']."/tablas/includes/database.php");
+require_once($_SERVER['DOCUMENT_ROOT']."/archivos_timbrado/includes/database.php");
 $consulta=$db->query("select a.anio as anio, a.periodo as periodo, a.nombre as nombre, a.id as id, t.nombre as tipo, u.usuario as usuario, a.creacion as creacion 
 from usuarios as u inner join archivos_usuarios as a on u.id=a.usuario inner join tipo_archivo as t on a.tipo=t.id");
 if($db->num_rows($consulta)>0)
 {
     while($fila_archivo=$db->fetch_array($consulta))
     {
-        $nombre_aux=explode("-",$fila_archivo['nombre']);
+        $nombre_aux=explode("---",$fila_archivo['nombre']);
         echo "<tr>";
         echo "<td>".$fila_archivo['id']."</td>";
         echo "<td>".$nombre_aux[1]."</td>";
@@ -36,7 +36,7 @@ if($db->num_rows($consulta2)>0)
 {
     while($fila_archivo2=$db->fetch_array($consulta2))
     {
-        $nombre_aux=explode("-",$fila_archivo2['nombre']);
+        $nombre_aux=explode("---",$fila_archivo2['nombre']);
         echo "<tr>";
         echo "<td>".$fila_archivo2['id']."</td>";
         echo "<td>".$nombre_aux[1]."(global)</td>";

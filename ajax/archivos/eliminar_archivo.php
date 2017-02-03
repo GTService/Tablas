@@ -1,5 +1,5 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT']."/tablas/includes/database.php");
+require_once($_SERVER['DOCUMENT_ROOT']."/archivos_timbrado/includes/database.php");
 $id=$_POST['id'];
 $tabla=$_POST['tabla'];
 $eliminar=$db->query("delete from $tabla where nombre='$id'");
@@ -8,7 +8,7 @@ include 'mostrar_archivos.php';
 $pagina = ob_get_clean();
 if($eliminar)
 {
-    unlink($_SERVER['DOCUMENT_ROOT']."/tablas/archivos/".$id);
+    unlink($_SERVER['DOCUMENT_ROOT']."/archivos_timbrado/archivos/".$id);
     $mensaje = array("header" => "success","body" => "archivo eliminado", "content" => $pagina);
 }
 else

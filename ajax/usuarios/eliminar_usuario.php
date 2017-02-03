@@ -1,5 +1,5 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT']."/tablas/includes/database.php");
+require_once($_SERVER['DOCUMENT_ROOT']."/archivos_timbrado/includes/database.php");
 $id=$_POST['id'];
 $q=$db->query("select * from archivos_usuarios where usuario='$id'");
 if($db->num_rows($q)==0)

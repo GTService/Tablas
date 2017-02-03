@@ -74,7 +74,7 @@ else
                             <option value=''>selecciona una opcion</option>
                             <option value='todos'>Todos</option>
                             <?php
-                            require_once($_SERVER['DOCUMENT_ROOT']."/tablas/includes/database.php");
+                            require_once($_SERVER['DOCUMENT_ROOT']."/archivos_timbrado/includes/database.php");
                             $consulta=$db->query("select * from usuarios where tipo!='1';");
                             if($db->num_rows($consulta)>0)
                             {
@@ -93,7 +93,7 @@ else
                     <span class="input-group-addon"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i></span>
                     <select name="tipo" id="tipo_archivo" class="form-control" required>
                         <?php
-                        require_once($_SERVER['DOCUMENT_ROOT']."/tablas/includes/database.php");
+                        require_once($_SERVER['DOCUMENT_ROOT']."/archivos_timbrado/includes/database.php");
                         $consulta=$db->query("select * from tipo_archivo");
                         if($db->num_rows($consulta)>0)
                         {

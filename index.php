@@ -7,7 +7,7 @@ if(!(isset($_SESSION['usuario'])))
     header("Location: login.php");
 }
 $menu="";
-    require_once($_SERVER['DOCUMENT_ROOT']."/tablas/includes/database.php");
+    require_once($_SERVER['DOCUMENT_ROOT']."/archivos_timbrado/includes/database.php");
     $consulta=$db->query("select * from usuarios where tipo='1' and usuario='".$_SESSION['usuario']."'");
     if($db->num_rows($consulta)==1)
     {

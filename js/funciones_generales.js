@@ -1,9 +1,7 @@
-//////////////generales//////////////////
 $( document ).ready(function() 
 {
     $('.table').dataTable();
     $('#DataTables_Table_0_filter:first-child').addClass( "pull-right" );
-
 });  
 function cerrar_sesion()
 {
@@ -14,10 +12,9 @@ function cerrar_sesion()
         {
             var mensaje=JSON.parse(respuesta);
             pnotify_creador("Adios",mensaje.body, mensaje.header);
+            window.location.replace("login.php");
         }
-    });
-    window.location.replace("login.php");
-    
+    });    
 }
 function limpiar_form(form)
 {
@@ -31,16 +28,8 @@ function abrir_modal(modal)
     });
 }
 function descargar(documento,usuario)
-{
+{alert(documento);
     document.location.href="ajax/archivos/descargar_documento.php?file_name="+documento+"&usuario="+usuario;
-}
-function pnotify_creador( title, text, type )
-{
-    new PNotify({
-        title: title,
-        text: text,
-        type: type
-    });
 }
 function activeTabChoose(id){
     

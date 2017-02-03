@@ -29,16 +29,17 @@ if(isset($_SESSION['usuario']))
                     </thead>
                     <tbody>
                         <?php
-                        require_once($_SERVER['DOCUMENT_ROOT']."/tablas/includes/database.php");
+                        require_once($_SERVER['DOCUMENT_ROOT']."/archivos_timbrado/includes/database.php");
                         $bitacora=$db->query("select * from bitacora order by fecha_descarga desc");
                         if($db->num_rows($bitacora)>0)
                         {
                             while($fila_bitacora=$db->fetch_array($bitacora))
                             {
+                                $nombre_aux=explode("---",$fila_bitacora['archivo']);
                                 echo "<tr>";
                                 echo "<td>".$fila_bitacora['id']."</td>";
                                 echo "<td>".$fila_bitacora['usuario']."</td>";
-                                echo "<td>".$fila_bitacora['archivo']."</td>";
+                                echo "<td>".$nombre_aux[1]."</td>";
                                 echo "<td>".$fila_bitacora['fecha_descarga']."</td>";
                                 echo "</tr>";
                             }

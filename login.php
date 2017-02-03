@@ -23,9 +23,7 @@ else
     
     
     
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/pnotify.custom.min.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
+    <?php    require_once("includes/plugins.php");?>
     <script type="text/javascript" src="js/login.js"></script>
   </head>
 
