@@ -1,3 +1,11 @@
+$( document ).ready(function() 
+{
+    $('.icheckRadio').iCheck({
+        checkboxClass: 'icheckbox_flat',
+        radioClass: 'iradio_flat-blue'
+    });
+}); 
+
 function agregar_usuario()
 {
     $.ajax({
