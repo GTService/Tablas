@@ -44,12 +44,12 @@ else
                   <div class="panel-body">
                     <div class="form-group">
                       <div class="input-group">
-                        <input id="usuario" name="usuario" class="form-control validar" placeholder="Usuario">
+                        <input onkeypress="return runScript(event)" id="usuario" name="usuario" class="form-control validar userData" placeholder="Usuario">
                         <span class="input-group-addon"><span class="fa fa-user"></span></span>
                       </div>
                       <br>
                       <div class="input-group">
-                        <input id="password" name="password" type="password" class="form-control validar on_enter" placeholder="Contraseña">
+                        <input onkeypress="return runScript(event)" id="password" name="password" type="password" class="form-control validar on_enter" placeholder="Contraseña">
                         <span class="input-group-addon"><span class="fa fa-lock"></span></span>
                       </div>
                     </div>

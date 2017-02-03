@@ -1,3 +1,15 @@
+        
+function runScript(e) { 
+    var keyCode = e.keyCode || e.which; 
+
+    if (keyCode == 13) {
+        e.preventDefault();
+        validar_usuario()
+
+       
+    } 
+};
+
 function validar_usuario()
 {
     $.ajax({
